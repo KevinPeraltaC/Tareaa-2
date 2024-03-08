@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contenedor-flexible {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 600px;
+            background-color: darkblue;
+            margin: 10px;
+        }
+        .caja {
+            width: 300px;
+            height: 500px;
+            margin: 10px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /
+        }
+        .caja-interna {
+            width: calc(33.33% - 10px); 
+            height: 100px;
+            margin: 5px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .caja-interna.modificada {
+            width: 80%; 
+            height: 60px; 
+            margin: 5px auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-flexible">
+        <div class="caja">
+            <div class="caja-interna">1</div>
+            <div class="caja-interna">2</div>
+            <div class="caja-interna">3</div>
+            <div class="caja-interna modificada">4</div>
+            <div class="caja-interna modificada">5</div>
+            <div class="caja-interna modificada">6</div>
+            <div class="caja-interna">7</div>
+            <div class="caja-interna">8</div>
+            <div class="caja-interna">9</div>
+        </div>
+        <div class="caja">
+            <div class="caja-interna modificada">10</div>
+            <div class="caja-interna modificada">11</div>
+            <div class="caja-interna modificada">12</div>
+            <div class="caja-interna modificada">13</div>
+            <div class="caja-interna modificada">14</div>
+            <div class="caja-interna modificada">15</div>
+        </div>
+        <div class="caja">
+            <div class="caja-interna">16</div>
+            <div class="caja-interna">17</div>
+            <div class="caja-interna">18</div>
+            <div class="caja-interna">19</div>
+            <div class="caja-interna">20</div>
+            <div class="caja-interna">21</div>
+            <div class="caja-interna">22</div>
+            <div class="caja-interna">23</div>
+            <div class="caja-interna">24</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
